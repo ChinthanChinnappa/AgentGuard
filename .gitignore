@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+node_modules/
+dist/
+.vite/
+.pytest_cache/
+postgres_data/
+.sf/
+*.db
+*.tsbuildinfo
