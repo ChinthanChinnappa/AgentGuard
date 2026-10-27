@@ -6,7 +6,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     app_name: str = "AgentGuard API"
     environment: str = "development"
-    database_url: str = "postgresql+psycopg://agentguard:agentguard@db:5432/agentguard"
+    database_url: str = "sqlite:///./agentguard.db"
     cors_origins: str = "http://localhost:5173"
 
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
